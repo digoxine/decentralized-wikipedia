@@ -12,7 +12,7 @@ contract Wikipedia {
     uint index = 0;
     ids.push(index);
 
-    Article memory newArticle = Article("This is your first article in your contract");
+    Article memory newArticle = Article("This is your first article in your contract 43");
     articlesById[index] = newArticle;
   }
 
@@ -24,14 +24,12 @@ contract Wikipedia {
     return ids;
   }
   // Write your code here.
-  function read(uint id) public view returns (string memory) {
-    return articlesById[id].content;
-  }
-
-  function submit(uint id, string memory content) public returns (bool) {
+  
+  function submit(uint id, string memory content) public returns (string memory) {
     ids.push(id);
-    articlesById[id] = Article(content);
-    return true;
+    Article memory newArticle = Article(content);
+    articlesById[id] = newArticle;
+    return content;
   }
   function updateArticle(uint id, string memory newContent) public returns (bool) {
     delete articlesById[id];
