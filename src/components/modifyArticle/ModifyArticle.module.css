@@ -1,0 +1,14 @@
+.subTitle {
+    font-weight: 600;
+}
+
+
+.mediumWrapper {
+    margin: 24px 0;
+}
+
+.editable {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0 12px;
+}
