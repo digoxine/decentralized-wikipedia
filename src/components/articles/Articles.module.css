@@ -3,4 +3,32 @@
     margin : 5px;
     border: black 3px solid;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
 }
+.articleContent {
+    border:  lightgray 1px solid;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+.articleContent:hover {
+    cursor: pointer;
+    background-color: #e4e9e0d0;
+}
+
+.button {
+    width: 100px;
+    height: 35px;
+    background-color: #BADA55;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #BADA5566;
+}
+

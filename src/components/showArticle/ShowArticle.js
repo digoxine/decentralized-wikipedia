@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { useSelector} from 'react-redux'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import styles from './ShowArticle.module.css'
 
 const ShowArticle = () => {
     const [article, setArticle] = useState([])
-  
     const { id } = useParams();
+    const [correct, setCorrect] = useState(false);
     const contract = useSelector(({ contract }) => contract)
     useEffect(() => {
       if (contract) {
@@ -16,6 +16,7 @@ const ShowArticle = () => {
                 console.log("content", articleContent);
                 if (articleContent !== '') {
                     setArticle(articleContent);
+                    setCorrect(true);
                 } else {
                     setArticle("Article Not Found");
                 }
@@ -27,10 +28,22 @@ const ShowArticle = () => {
         }
         getArticleContent(id);
       }
-    }, [contract, setArticle])
-    return <div className={styles.articleWrapper} key={1}>
-      { article }
+    }, [contract, setArticle, setCorrect])
+    return (
+    <div className={styles.layout}>
+        {
+            correct &&
+            <Link to={"/article/modify/" + id}>
+                <button className={styles.button} type='button'>
+                    Modify
+                </button>
+            </Link>
+        }
+        <div className={styles.articleWrapper} key={1}>
+            { article }
+        </div>
     </div>
+    )
 }
 
 export default ShowArticle;

@@ -7,6 +7,7 @@ import { Switch, Link, Route } from 'react-router-dom'
 import AllArticles from '../articles/Articles'
 import NewArticle from '../newArticle/NewArticle'
 import ShowArticle from '../showArticle/ShowArticle'
+import ModifyArticle from '../modifyArticle/ModifyArticle'
 
 // services imports
 import * as Ethereum from '../../services/Ethereum'
@@ -58,6 +59,9 @@ const App = () => {
         </Route>
         <Route path="/article/all">
           <AllArticles />
+        </Route>
+        <Route path="/article/modify/:id">
+          <ModifyArticle/>
         </Route>
         <Route path="/article/:id">
           <ShowArticle/>
