@@ -56,7 +56,7 @@ const submitModification = (event, contract, id) => {
     if (content === null || content === '') {
       return;
     }
-    contract.methods.updateArticle(id, content).call().then(ok => {
+    contract.methods.updateArticle(id, content).send().then(ok => {
       console.log("updated ?", ok);
     });
 }
