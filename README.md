@@ -69,19 +69,13 @@ yarn start
 npm start
 ```
 
-You’re good to go!
+##############################
+Home button implemented in order to go back to index 
+Possible to get all articles (component articles)
+Possible to add an article (component newArticle)
+Possible to update an existing article (component modifyArticle)
+Possible to get all available articles (component showArticle)
+Everybody is able to modify every article
 
-# Subject
 
-Implement a Wikipedia from scratch in Solidity.
 
-The program should be able to:
-
-- Read an article by its ID (an uint).
-- Someone should be able to submit a new article with ID and content.
-- Someone should be able to update an article.
-
-Bonus:
-
-- Keep history of modifications and display it in the app.
-- Integrate the DApp with [Fortmatic](https://fortmatic.com/).
