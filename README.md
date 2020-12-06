@@ -1,9 +1,13 @@
 ##############################################################
-Authors
+##Authors
+
 
 - Karim Leffad
 - Sacha Memmi
 ##############################################################
+##Modifications
+
+
 -Reorganization of components
 
 -Home button implemented in order to go back to index 
