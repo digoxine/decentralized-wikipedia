@@ -1,27 +1,26 @@
-##############################################################
-##Authors
+
+## Authors
 
 
 - Karim Leffad
 - Sacha Memmi
-##############################################################
-##Modifications
+
+## Modifications
 
 
--Reorganization of components
+- Reorganization of components
 
--Home button implemented in order to go back to index 
+- Home button implemented in order to go back to index 
 
--Possible to get all articles (component articles)
+- Possible to get all articles (component articles)
 
--Possible to add an article (component newArticle)
+- Possible to add an article (component newArticle)
 
--Possible to update an existing article (component modifyArticle)
+- Possible to update an existing article (component modifyArticle)
 
--Possible to get all available articles (component showArticle)
+- Possible to get all available articles (component showArticle)
 
--Everybody is able to modify every article
-###############################################################
+- Everybody is able to modify every article
 
 
 
